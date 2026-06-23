@@ -139,9 +139,26 @@ footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12px}
 .livedot{width:11px;height:11px;border-radius:50%;background:#fff;animation:pulse 1.3s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.6)}70%{box-shadow:0 0 0 9px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
 .livegames{display:flex;gap:8px;flex-wrap:wrap;font-family:var(--body);text-transform:none;letter-spacing:0}
-.lg{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 11px;font-size:13px;font-weight:600}
+.lg{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:3px;color:#fff}
+.lg:hover{background:rgba(255,255,255,.28)}
+.lg.on{background:#fff;color:#c81818;border-color:#fff}
 .lg b{font-family:var(--mono);margin:0 3px}
 .lg i{font-style:normal;font-family:var(--mono);opacity:.85;margin-left:5px;font-size:11px}
+.lg .car{font-family:var(--body);font-size:13px;margin-left:5px;transition:.2s;opacity:.9}
+.lg.on .car{transform:rotate(180deg)}
+.livegames.solo .lg{cursor:default;background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.25);color:#fff}
+.livegames.solo .lg:hover{background:rgba(255,255,255,.14)}
+.livegames.solo .lg .car{display:none}
+.livetap{font-size:11.5px;color:var(--muted);margin-top:6px;font-style:italic}
+.livepanel{margin-top:12px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;animation:lpfade .2s ease}
+@keyframes lpfade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.lp-head{background:var(--navy);color:#fff;padding:13px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.lp-head .mt{font-weight:700;font-size:15px}
+.lp-head .scr{font-family:var(--mono);font-weight:700;font-size:19px;color:var(--gold);margin:0 4px}
+.lp-head .lvtag{margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;background:var(--fire);padding:3px 9px;border-radius:6px}
+.lp-ph{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center;padding:9px 0 3px}
+.lp-foot{padding:9px 16px;border-top:1px dashed var(--line);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.lp-foot b{color:var(--ink)}
 .provnote{font-size:12px;color:var(--muted);margin-top:7px;text-align:center}
 .provnote b{color:var(--fire)}
 .ej{font-family:var(--mono);font-size:11px;font-weight:700;color:#fff;background:var(--fire);border-radius:6px;padding:1px 6px;margin-left:6px}
@@ -149,6 +166,33 @@ footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12px}
 .match.live .mrow{background:rgba(239,75,39,.06)}
 .match.live .sc{color:var(--fire)}
 .provtag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--fire);border-radius:6px;padding:2px 8px;margin-left:8px;vertical-align:middle}
+
+.chartcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+.chartbox{width:100%}
+.chartempty{padding:54px 20px;text-align:center;color:var(--muted);font-size:13px}
+.chartlegend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.legitem{display:inline-flex;align-items:center;gap:6px;font-family:var(--body);font-size:12.5px;font-weight:600;color:var(--ink);background:#F4F6FA;border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;transition:.15s}
+.legitem:hover{background:#E9EFF7}
+.legitem.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.legitem .dot{width:10px;height:10px;border-radius:50%}
+.legitem b{font-family:var(--mono);opacity:.85}
+.legitem.on b{opacity:1}
+
+.tickerwrap{margin:16px 0 2px}
+.ticker{display:flex;align-items:stretch;background:var(--navy);border-radius:10px;overflow:hidden;border:1px solid #143557;box-shadow:0 10px 26px -16px rgba(10,37,64,.7)}
+.ticker .tag{flex:none;display:flex;align-items:center;gap:7px;background:var(--gold);color:var(--navy);font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:13px;padding:0 14px}
+.ticker .tag .pulse{width:8px;height:8px;border-radius:50%;background:var(--fire);animation:tpulse 1.2s infinite}
+@keyframes tpulse{0%{box-shadow:0 0 0 0 rgba(239,75,39,.6)}70%{box-shadow:0 0 0 6px rgba(239,75,39,0)}100%{box-shadow:0 0 0 0 rgba(239,75,39,0)}}
+.ticker .view{flex:1;overflow:hidden;position:relative}
+.ticker .track{display:inline-flex;align-items:center;white-space:nowrap;padding:11px 0;will-change:transform;animation:tscroll var(--tdur,38s) linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+@keyframes tscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker .item{color:#EAF1FA;font-size:13.5px;font-weight:500;padding:0 22px;display:inline-flex;align-items:center;gap:7px}
+.ticker .item .em{color:var(--gold);font-weight:700}
+.ticker .item .hot{color:#FFB36B;font-weight:700}
+.ticker .item.sep{color:#3E5A7C;padding:0}
+@media(prefers-reduced-motion:reduce){.ticker .track{animation:none}}
+@media(max-width:720px){.ticker .tag{font-size:11px;padding:0 10px}.ticker .item{font-size:12.5px;padding:0 16px}}
 </style>
 </head>
 <body>
@@ -166,9 +210,17 @@ footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12px}
   <a href="#ranking">Ranking oficial</a>
   <a href="#destacados">Destacados</a>
   <a href="#resultados">Resultados</a>
+  <a href="#estadistica">📈 Estadística</a>
 </div></div>
 
 <div class="wrap">
+
+  <div class="tickerwrap">
+    <div class="ticker" id="ticker">
+      <div class="tag"><span class="pulse"></span> En la polla</div>
+      <div class="view"><div class="track" id="tickerTrack"></div></div>
+    </div>
+  </div>
 
   <section id="ranking">
     <div class="sechead">
@@ -208,6 +260,17 @@ footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12px}
     <div class="note">Los resultados llegan desde <b id="provName">la API</b> y se guardan en <code>resultados.json</code>, que actualiza un proceso automático del repositorio. La <b>fase de llave</b> se suma cuando se conozcan los cruces.</div>
   </section>
 
+  <section id="estadistica">
+    <div class="sechead">
+      <div><div class="eyebrow">La carrera de la polla</div><h2>📈 Estadística</h2></div>
+      <div class="hint">Puntos acumulados de cada jugador, partido a partido. Toca un nombre para resaltar su línea.</div>
+    </div>
+    <div class="chartcard">
+      <div id="chartLegend" class="chartlegend"></div>
+      <div id="chartBox" class="chartbox"></div>
+    </div>
+  </section>
+
 </div>
 
 <div class="flash" id="flash"></div>
@@ -226,6 +289,7 @@ let liveIdx = new Set();                      // índices de partidos en vivo ah
 let liveInfo = {};                            // idx -> reloj (ej "35'")
 let liveList = [];                            // partidos en vivo para el banner
 let espnLive = [], espnPost = [];             // crudo parseado de ESPN
+let bannerOpen = null;                        // índice de fixture abierto en el banner en vivo
 
 const sgn = x => x>0?1:x<0?-1:0;
 function scoreOne(pred, r){
@@ -285,13 +349,42 @@ function leader(rows,key){
 
 function renderLive(){
   const wrap=document.getElementById("liveWrap");
-  if(!liveList.length){ wrap.style.display="none"; wrap.innerHTML=""; return; }
+  if(!liveList.length){ wrap.style.display="none"; wrap.innerHTML=""; bannerOpen=null; return; }
   wrap.style.display="";
+  // si el partido abierto ya no está en vivo (terminó), se cierra solo
+  if(bannerOpen!=null && !liveList.some(m=>m.i===bannerOpen)) bannerOpen=null;
+  const solo = liveList.length===1;
+  if(solo) bannerOpen = liveList[0].i;   // un solo partido: el detalle se abre solo
   const games = liveList.map(m=>
-    `<span class="lg">${esc(m.homeES)} <b>${m.gl}-${m.gv}</b> ${esc(m.awayES)} <i>${esc(m.clock||"")}</i></span>`).join("");
+    `<span class="lg ${bannerOpen===m.i?'on':''}" data-i="${m.i}">${esc(m.homeES)} <b>${m.gl}-${m.gv}</b> ${esc(m.awayES)}<i>${esc(m.clock||"")}</i><span class="car">▾</span></span>`).join("");
   wrap.innerHTML = `<div class="livebar"><span class="livedot"></span> En vivo
-      <div class="livegames">${games}</div></div>
-    <div class="provnote">El ranking de abajo es <b>provisional</b>: incluye los partidos en vivo y puede cambiar hasta que terminen.</div>`;
+      <div class="livegames${solo?' solo':''}">${games}</div></div>
+    <div class="provnote">El ranking de abajo es <b>provisional</b>: incluye los partidos en vivo y puede cambiar hasta que terminen.</div>
+    ${solo?"":'<div class="livetap">Toca un partido para ver las apuestas.</div>'}
+    <div id="livePanel">${bannerOpen!=null?buildBannerPanel(bannerOpen):""}</div>`;
+  if(!solo) wrap.querySelectorAll(".lg").forEach(el=>el.addEventListener("click",()=>{
+    const i=+el.dataset.i; bannerOpen=(bannerOpen===i)?null:i; renderLive();
+  }));
+}
+
+function buildBannerPanel(idx){
+  const m = liveList.find(x=>x.i===idx); if(!m) return "";
+  const f = DATA.fixtures[idx];
+  const rows = DATA.players.map(p=>{
+    const pr=p.preds[idx]; const has = pr && pr[0]!=null && pr[1]!=null;
+    let s=scoreOne(pr, real[idx]); if(s===null) s=0;
+    return {name:p.name, pred:has?`${pr[0]}-${pr[1]}`:"—", s};
+  });
+  rows.sort((a,b)=> b.s-a.s || a.name.localeCompare(b.name));
+  const sumando=rows.filter(r=>r.s>0).length, exactos=rows.filter(r=>r.s===6).length;
+  const body=rows.map(r=>
+    `<div class="prow"><span class="pn">${esc(r.name)}</span><span class="pg">${r.pred}</span><span class="pp p${r.s}">${r.s} pt${r.s===1?"":"s"}</span></div>`).join("");
+  return `<div class="livepanel">
+    <div class="lp-head"><span class="mt">${esc(f.local)}</span><span class="scr">${m.gl}-${m.gv}</span><span class="mt">${esc(f.visitante)}</span><span class="lvtag">${esc(m.clock||"en vivo")} · provisional</span></div>
+    <div class="lp-ph">Puntos en vivo de este partido</div>
+    ${body}
+    <div class="lp-foot"><span>🎯 Sumando: <b>${sumando}</b> de ${rows.length}</span><span>🔥 Exactos: <b>${exactos}</b></span></div>
+  </div>`;
 }
 
 function renderRanking(){
@@ -397,7 +490,100 @@ function hace(iso){
   return "hace "+Math.floor(s/86400)+" días";
 }
 
-function recompute(){ applyEspn(); renderLive(); renderRanking(); renderResults(); }
+
+let chartHL = null;
+const MONTHS = {ene:1,feb:2,mar:3,abr:4,may:5,jun:6,jul:7,ago:8,sep:9,oct:10,nov:11,dic:12};
+function dateKey(i){
+  const f=DATA.fixtures[i]; const m=(f.fecha||"").trim().toLowerCase().match(/(\d+)\s*([a-z]+)/);
+  if(!m) return 9999;
+  return (MONTHS[m[2].slice(0,3)]||12)*100 + parseInt(m[1],10);
+}
+const PAL=["#1F4E79","#EF4B27","#16A571","#E2A100","#7A4DB8","#E84393","#0AA1A1","#9C6B1E","#5BA8D6","#C0392B","#2E8B57","#8E44AD"];
+function evolution(){
+  const idxs=DATA.fixtures.map((f,i)=>i).filter(i=>isPlayed(i));
+  idxs.sort((a,b)=> dateKey(a)-dateKey(b) || a-b);
+  const series=DATA.players.map((p,pi)=>({name:p.name,color:PAL[pi%PAL.length],cum:[],total:0}));
+  idxs.forEach(i=>series.forEach((S,pi)=>{
+    let s=scoreOne(DATA.players[pi].preds[i],real[i]); if(s===null)s=0;
+    S.total+=s; S.cum.push(S.total);
+  }));
+  return {idxs,series};
+}
+function renderChart(){
+  const box=document.getElementById("chartBox"), leg=document.getElementById("chartLegend");
+  if(!box) return;
+  const {idxs,series}=evolution(); const n=idxs.length;
+  if(n===0){ box.innerHTML='<div class="chartempty">Aún no hay partidos jugados. El gráfico se va llenando a medida que cargan los resultados. 📊</div>'; leg.innerHTML=""; return; }
+  const W=860,H=430,mL=34,mR=12,mT=14,mB=42, plotW=W-mL-mR, plotH=H-mT-mB;
+  const maxY=Math.max(6,...series.map(s=>s.total));
+  const X=k=> mL+(n===1?plotW/2:plotW*k/(n-1));
+  const Y=v=> mT+plotH-plotH*v/maxY;
+  let grid="";
+  for(let t=0;t<=5;t++){ const v=Math.round(maxY*t/5), y=Y(v);
+    grid+=`<line x1="${mL}" y1="${y}" x2="${W-mR}" y2="${y}" stroke="#E2E8F0"/>`;
+    grid+=`<text x="${mL-5}" y="${y+3}" text-anchor="end" font-size="10" fill="#5B6B7F" font-family="ui-monospace,monospace">${v}</text>`;
+  }
+  let xlab=""; const step=Math.max(1,Math.ceil(n/12));
+  idxs.forEach((idx,k)=>{ if(k%step===0||k===n-1)
+    xlab+=`<text x="${X(k)}" y="${H-mB+15}" text-anchor="middle" font-size="9" fill="#5B6B7F" font-family="ui-monospace,monospace">${k+1}</text>`; });
+  xlab+=`<text x="${(mL+W-mR)/2}" y="${H-6}" text-anchor="middle" font-size="10" fill="#9aa7b6">partidos jugados (en orden)</text>`;
+  let paths="";
+  series.forEach(S=>{
+    const hl=chartHL===S.name, dim=chartHL&&!hl;
+    const pts=S.cum.map((v,k)=>`${X(k).toFixed(1)},${Y(v).toFixed(1)}`).join(" ");
+    paths+=`<polyline points="${pts}" fill="none" stroke="${S.color}" stroke-width="${hl?4:2}" opacity="${dim?0.12:1}" stroke-linejoin="round" stroke-linecap="round"/>`;
+    paths+=`<circle cx="${X(n-1).toFixed(1)}" cy="${Y(S.total).toFixed(1)}" r="${hl?4.5:3}" fill="${S.color}" opacity="${dim?0.12:1}"/>`;
+  });
+  box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto;display:block">${grid}${xlab}${paths}</svg>`;
+  const ordered=series.slice().sort((a,b)=>b.total-a.total||a.name.localeCompare(b.name));
+  leg.innerHTML=ordered.map(S=>`<button class="legitem ${chartHL===S.name?'on':''}" data-name="${esc(S.name)}"><span class="dot" style="background:${S.color}"></span>${esc(S.name)} <b>${S.total}</b></button>`).join("");
+  leg.querySelectorAll(".legitem").forEach(b=>b.onclick=()=>{ const nm=b.dataset.name; chartHL=(chartHL===nm)?null:nm; renderChart(); });
+}
+
+function playedOrder(){ return DATA.fixtures.map((_,i)=>i).filter(isPlayed).sort((a,b)=>dateKey(a)-dateKey(b)||a-b); }
+function streakOf(player,order){ let n=0; for(let k=order.length-1;k>=0;k--){ let s=scoreOne(player.preds[order[k]],real[order[k]]); if(s&&s>0)n++; else break; } return n; }
+function tkE(t){ return `<span class="em">${esc(t)}</span>`; }
+function tkH(t){ return `<span class="hot">${esc(t)}</span>`; }
+function buildTickerItems(){
+  const {rows,played}=compute();
+  const it=[];
+  if(played===0){
+    it.push(`🏁 La polla aún no arranca`);
+    it.push(`⚽ ${tkE(N)} partidos por delante`);
+    it.push(`👥 ${tkE(DATA.players.length)} jugadores listos`);
+    it.push(`🎯 Reglas: ${tkE("2")} resultado · ${tkE("4")} margen · ${tkE("6")} exacto`);
+    it.push(`🔥 Que gane el mejor pronóstico`);
+    return it;
+  }
+  const lead=rows[0], tied=rows.filter(r=>r.total===lead.total);
+  if(tied.length>1) it.push(`🥇 Empate en la cima: ${tkE(tied.map(t=>t.name).join(" y "))} con ${tkE(lead.total)} pts`);
+  else it.push(`🥇 ${tkE(lead.name)} lidera con ${tkE(lead.total+" pts")}`);
+  rows.slice(1,5).forEach(r=>{ const d=lead.total-r.total; if(d>0) it.push(`${esc(r.name)} está a ${tkH(d+" pts")} del puntero`); });
+  const maxEx=Math.max(...rows.map(r=>r.exact));
+  if(maxEx>0){ const who=rows.filter(r=>r.exact===maxEx).map(r=>r.name); it.push(`🔥 ${tkE(who.join(", "))} ${who.length>1?"lideran":"lidera"} en exactos con ${tkH(maxEx)}`); }
+  const maxSc=Math.max(...rows.map(r=>r.scored));
+  if(maxSc>0){ const cons=rows.filter(r=>r.scored===maxSc).map(r=>r.name); it.push(`🎯 ${tkE(cons.join(", "))} ${cons.length>1?"han":"ha"} puntuado en ${tkH(maxSc)} partidos`); }
+  const order=playedOrder();
+  let best={n:0,name:""}; DATA.players.forEach(p=>{ const n=streakOf(p,order); if(n>best.n)best={n,name:p.name}; });
+  if(best.n>=2) it.push(`📈 ${tkE(best.name)} acumula ${tkH(best.n)} partidos seguidos sumando`);
+  for(let k=order.length-1;k>=0;k--){ const i=order[k];
+    const hit=DATA.players.filter(p=>scoreOne(p.preds[i],real[i])===6).map(p=>p.name);
+    if(hit.length){ const f=DATA.fixtures[i]; it.push(`💥 ${tkE(hit.join(", "))} clavó el ${tkH(real[i][0]+"-"+real[i][1])} de ${esc(f.local)}-${esc(f.visitante)}`); break; } }
+  let totalEx=0; order.forEach(i=>DATA.players.forEach(p=>{ if(scoreOne(p.preds[i],real[i])===6)totalEx++; }));
+  if(totalEx>0) it.push(`📊 ${tkE(totalEx)} marcadores exactos en la polla hasta ahora`);
+  const last=rows[rows.length-1];
+  it.push(`🐌 ${esc(last.name)} cierra la tabla con ${esc(last.total)} pts… aún hay torneo`);
+  return it;
+}
+function renderTicker(){
+  const track=document.getElementById("tickerTrack"); if(!track) return;
+  const items=buildTickerItems();
+  const html=items.map(t=>`<span class="item">${t}</span><span class="item sep">•</span>`).join("");
+  track.innerHTML=html+html;                         // duplicado para loop continuo
+  track.style.setProperty("--tdur", Math.max(22, items.length*5)+"s");
+}
+
+function recompute(){ applyEspn(); renderTicker(); renderLive(); renderRanking(); renderResults(); renderChart(); }
 
 async function loadOficial(showFlash){
   try{
