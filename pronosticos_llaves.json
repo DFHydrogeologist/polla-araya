@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-06-28T17:15:53.368018+00:00",
+ "updatedAt": "2026-06-28T17:37:12.211695+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T18:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -495,7 +495,7 @@
    [
     3,
     1,
-    "USA"
+    "Estados Unidos"
    ],
    [
     1,
@@ -645,23 +645,23 @@
     "Países Bajos"
    ],
    [
-    null,
-    null,
+    2,
+    1,
     "Portugal"
    ],
    [
-    null,
-    null,
+    3,
+    1,
     "España"
    ],
    [
     2,
     0,
-    "USA"
+    "Estados Unidos"
    ],
    [
-    null,
-    null,
+    3,
+    1,
     "Bélgica"
    ],
    [
@@ -675,33 +675,33 @@
     "Noruega"
    ],
    [
-    null,
-    null,
+    2,
+    1,
     "Ecuador"
-   ],
-   [
-    null,
-    null,
-    "Inglaterra"
    ],
    [
     2,
     0,
+    "Inglaterra"
+   ],
+   [
+    3,
+    0,
     "Argentina"
    ],
    [
-    null,
-    null,
+    1,
+    2,
     "Egipto"
    ],
    [
-    null,
-    null,
+    2,
+    1,
     "Suiza"
    ],
    [
-    null,
-    null,
+    2,
+    0,
     "Colombia"
    ],
    [
@@ -1308,48 +1308,48 @@
     "Estados Unidos"
    ],
    [
-    null,
-    null,
+    3,
+    0,
     "Bélgica"
    ],
    [
-    null,
-    null,
+    2,
+    0,
     "Brasil"
    ],
    [
-    null,
-    null,
+    1,
+    2,
     "Noruega"
    ],
    [
-    null,
-    null,
+    0,
+    2,
     "Ecuador"
    ],
    [
-    null,
-    null,
+    3,
+    0,
     "Inglaterra"
    ],
    [
-    null,
-    null,
+    4,
+    0,
     "Argentina"
    ],
    [
-    null,
-    null,
-    "Egipto"
+    2,
+    0,
+    "Australia"
    ],
    [
-    null,
-    null,
+    1,
+    0,
     "Suiza"
    ],
    [
-    null,
-    null,
+    3,
+    0,
     "Colombia"
    ],
    [
