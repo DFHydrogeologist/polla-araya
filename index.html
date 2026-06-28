@@ -74,6 +74,7 @@ section{padding:34px 0 8px}
 .card .runners span b{color:var(--ink);font-weight:600}
 
 .tablecard{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.subcap{font-family:var(--display);font-size:15px;color:var(--ink);margin:18px 2px 8px}
 table{width:100%;border-collapse:collapse;font-size:14px}
 thead th{background:var(--blue);color:#fff;font-weight:600;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;padding:11px 10px;text-align:center}
 thead th.l{text-align:left}
@@ -193,6 +194,59 @@ footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12px}
 .ticker .item.sep{color:#3E5A7C;padding:0}
 @media(prefers-reduced-motion:reduce){.ticker .track{animation:none}}
 @media(max-width:720px){.ticker .tag{font-size:11px;padding:0 10px}.ticker .item{font-size:12.5px;padding:0 16px}}
+.koround{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:12px}
+.korhead{font-family:var(--display);font-size:16px;color:var(--ink);display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.korb{font-family:var(--mono);font-size:11px;color:var(--green);background:rgba(22,165,113,.1);padding:2px 8px;border-radius:20px}
+.kocruce{display:grid;grid-template-columns:1fr auto 1fr auto;align-items:center;gap:10px;padding:7px 4px;border-top:1px dashed var(--line);font-size:13.5px}
+.kocruce:first-of-type{border-top:none}
+.kocruce .kot{font-weight:600}
+.kocruce .kot:first-child{text-align:right}
+.koscore{font-family:var(--mono);font-weight:700;background:var(--navy);color:#fff;padding:2px 9px;border-radius:7px;font-size:13px}
+.kovs{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.kostat{font-size:11px;color:var(--muted);justify-self:end}
+.kostat.ok{color:var(--ink)}
+.kostat b{color:var(--green)}
+.kocruce.pend{opacity:.6}
+.kocruce.envivo{background:rgba(239,75,39,.06)}
+.koscorewrap{display:flex;flex-direction:column;align-items:center;gap:2px}
+.koet{font-family:var(--mono);font-size:9.5px;color:var(--muted);white-space:nowrap}
+.kostat.live{color:var(--fire);font-weight:700;display:inline-flex;align-items:center;gap:5px}
+.kostat.live .livedot{width:7px;height:7px;border-radius:50%;background:var(--fire);animation:lpulse 1.2s infinite}
+@keyframes lpulse{0%,100%{opacity:1}50%{opacity:.3}}
+.komatch.live .kocruce{background:rgba(239,75,39,.06)}
+.carrera{margin-top:18px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.carrera-h{font-family:var(--display);font-size:16px;margin-bottom:10px}
+.crow{display:grid;grid-template-columns:120px 1fr auto auto;align-items:center;gap:10px;padding:4px 0;font-size:13px}
+.crow .cn{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cbar{height:9px;background:var(--paper);border-radius:6px;overflow:hidden}
+.cfill{display:block;height:100%;background:var(--frost);border-radius:6px}
+.cfill.first{background:var(--gold)}
+.cpts{font-family:var(--mono);font-weight:700;min-width:28px;text-align:right}
+.cg{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:38px;text-align:right}
+.cg.lead{color:var(--gold);font-weight:700}
+@media(max-width:560px){.crow{grid-template-columns:90px 1fr auto auto}}
+.kotraza{background:#F2F7FD;border:1px solid var(--line);border-radius:9px;padding:8px 12px;margin:2px 4px 10px}
+.ktr{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:3px 0;font-size:12.5px}
+.ktr+.ktr{border-top:1px dashed var(--line)}
+.ktk{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ktv{font-weight:600;text-align:right}
+.komatch{border-top:1px dashed var(--line)}
+.komatch:first-child{border-top:none}
+.komatch .kocruce{border-top:none}
+.komatch.clk .kocruce{cursor:pointer;position:relative;padding-right:26px;border-radius:8px}
+.komatch.clk .kocruce:hover{background:#F7FAFE}
+.koexp{position:absolute;right:6px;top:50%;transform:translateY(-50%);color:#B3C0D0;font-size:11px;transition:.2s}
+.komatch.open .koexp{transform:translateY(-50%) rotate(180deg);color:var(--blue2)}
+.komatch.open .kocruce{background:#F2F7FD}
+.kopreds{display:none;padding:8px 6px 10px}
+.komatch.open .kopreds{display:block}
+.koprow{display:grid;grid-template-columns:1fr auto auto auto;align-items:center;gap:9px;padding:5px 10px;border-radius:7px;font-size:12.5px}
+.koprow:nth-child(even){background:#FAFCFF}
+.koprow .pn{font-weight:600}
+.koprow .pg{font-family:var(--mono);font-weight:700;color:var(--muted)}
+.koav{font-size:11px;color:var(--frost);font-weight:600}
+.koav.none{color:#B3C0D0}
+.kobonus{font-family:var(--mono);font-size:10px;color:var(--green);font-weight:700}
 </style>
 </head>
 <body>
@@ -208,8 +262,9 @@ footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12px}
 
 <div class="subnav"><div class="wrap">
   <a href="#ranking">Ranking oficial</a>
+  <a href="#llaves">🗝️ Llaves</a>
   <a href="#destacados">Destacados</a>
-  <a href="#resultados">Resultados</a>
+  <a href="#resultados">Grupos</a>
   <a href="#estadistica">📈 Estadística</a>
 </div></div>
 
@@ -225,24 +280,48 @@ footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12px}
   <section id="ranking">
     <div class="sechead">
       <div><div class="eyebrow">Tabla general</div><h2>🏆 Ranking oficial</h2></div>
-      <div class="hint">Suma de puntos en los partidos jugados. 2 acierto de resultado · 4 + margen · 6 marcador exacto.</div>
+      <div class="hint">Total = fase de grupos + fase de llaves. Marcador: 2 acierto · 4 + margen · 6 exacto. En llaves se suma el bonus por avance.</div>
     </div>
     <div class="livewrap" id="liveWrap" style="display:none"></div>
     <div class="podium" id="podium"></div>
-    <div class="tablecard" style="margin-top:16px">
+
+    <div class="subcap">🗝️ Detalle de la fase de llaves</div>
+    <div class="tablecard">
       <table>
         <thead><tr>
           <th>#</th><th class="l">Jugador</th>
-          <th title="Partidos puntuando">🎯 Puntúa</th>
-          <th title="Partidos sin puntos">🥶 En blanco</th>
-          <th title="Marcadores exactos (6 pts)">🔥 Exactos</th>
-          <th>Puntos</th>
+          <th title="Cruces donde sumó algún punto">🎯 Puntuando</th>
+          <th title="Cruces jugados sin puntos">🥶 En blanco</th>
+          <th title="Marcadores exactos en llaves">🔥 Exactos</th>
+          <th title="Puntos por acertar quién avanza">➡️ Bonus</th>
+          <th>Total llaves</th>
         </tr></thead>
-        <tbody id="rankBody"></tbody>
+        <tbody id="koDetailBody"></tbody>
       </table>
     </div>
-  </section>
 
+    <div class="subcap">🏆 Resumen general · define al ganador</div>
+    <div class="tablecard">
+      <table>
+        <thead><tr>
+          <th>#</th><th class="l">Jugador</th>
+          <th title="Puntos de la fase de grupos">Grupos</th>
+          <th title="Puntos de la fase de llaves">🗝️ Llaves</th>
+          <th>Total</th>
+        </tr></thead>
+        <tbody id="totalBody"></tbody>
+      </table>
+    </div>
+    <div class="carrera" id="carreraBox"></div>
+  </section>
+  <section id="llaves">
+    <div class="sechead">
+      <div><div class="eyebrow">Fase final · eliminación directa</div><h2>🗝️ Llaves</h2></div>
+      <div class="hint">Marcador a los 90' con el mismo puntaje (2 · 4 · 6) más bonus por acertar quién avanza: dieciseisavos +2, octavos +3, cuartos +4, semis +5, tercer puesto +6, final +7.</div>
+    </div>
+    <div id="koRounds"></div>
+    <div class="note">Las apuestas las cargan los jugadores en el Google Sheets y las consolida el proceso automático en <code>pronosticos_llaves.json</code>. El marcador real de cada cruce —y quién avanza si hubo penales— lo completas en la pestaña <b>Resultados</b> de la planilla.</div>
+  </section>
   <section id="destacados">
     <div class="sechead">
       <div><div class="eyebrow">Los números de la polla</div><h2>Destacados</h2></div>
@@ -250,16 +329,14 @@ footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12px}
     </div>
     <div class="cards" id="cards"></div>
   </section>
-
   <section id="resultados">
     <div class="sechead">
-      <div><div class="eyebrow">Marcadores oficiales · solo lectura</div><h2>Resultados</h2></div>
+      <div><div class="eyebrow">Fase de grupos · historial</div><h2>📋 Grupos</h2></div>
       <div class="hint">Los marcadores los completa la API automáticamente. Toca un partido para ver qué marcó cada participante y sus puntos.</div>
     </div>
     <div id="groups"></div>
     <div class="note">Los resultados llegan desde <b id="provName">la API</b> y se guardan en <code>resultados.json</code>, que actualiza un proceso automático del repositorio. La <b>fase de llave</b> se suma cuando se conozcan los cruces.</div>
   </section>
-
   <section id="estadistica">
     <div class="sechead">
       <div><div class="eyebrow">La carrera de la polla</div><h2>📈 Estadística</h2></div>
@@ -289,6 +366,7 @@ let liveIdx = new Set();                      // índices de partidos en vivo ah
 let liveInfo = {};                            // idx -> reloj (ej "35'")
 let liveList = [];                            // partidos en vivo para el banner
 let espnLive = [], espnPost = [];             // crudo parseado de ESPN
+let koLive = {};                              // k -> {state, clock, g90:[gl,gv], gFinal:[gl,gv], winner, wentET} desde ESPN para llaves
 let bannerOpen = null;                        // índice de fixture abierto en el banner en vivo
 
 const sgn = x => x>0?1:x<0?-1:0;
@@ -313,6 +391,75 @@ function fixtureIndex(homeES, awayES){
   return null;
 }
 
+// busca un cruce de llaves que enfrente a estos dos equipos (en cualquier orden)
+function koIndex(he, ae){
+  if(!LL || !Array.isArray(LL.llaves)) return null;
+  for(let k=0;k<LL.llaves.length;k++){
+    const m=LL.llaves[k];
+    if(!m.local || !m.visita) continue;
+    if(norm(m.local)===norm(he) && norm(m.visita)===norm(ae)) return {k, swap:false};
+    if(norm(m.local)===norm(ae) && norm(m.visita)===norm(he)) return {k, swap:true};
+  }
+  return null;
+}
+
+// goles de un competidor SOLO en los 90' reglamentarios.
+// HIPÓTESIS (a confirmar con un partido real con alargue): linescores trae un elemento por
+// período; los 90' son los dos primeros (1ª y 2ª parte). Alargue/penales vienen como períodos
+// extra (period>2) y se excluyen. Si no hay linescores, devuelve null y el caller usa el total.
+function goles90(comp){
+  const ls = comp && comp.linescores;
+  if(!Array.isArray(ls) || !ls.length) return null;
+  const tienePeriod = ls.some(p=>p && p.period!=null);
+  let s=0;
+  if(tienePeriod) ls.forEach(p=>{ if(p && p.period!=null && p.period<=2) s+=(+p.value||0); });
+  else ls.slice(0,2).forEach(p=> s+=(+p.value||0));   // sin period: primeros 2 elementos
+  return s;
+}
+
+// ───────────── Fase de llaves (pronosticos_llaves.json) ─────────────
+let LL = null;            // crudo del JSON de llaves
+let koByName = {};        // norm(nombre) -> {total, marker, bonus, exact, scored, played}
+const KO_BONUS = {rondade32:2, octavos:3, cuartos:4, semifinal:5, "3erpuesto":6, final:7};
+
+// resultado real de un cruce: ESPN (vivo/final) tiene prioridad; si no hay, lo del Sheet.
+// gl/gv son SIEMPRE los 90' (para el puntaje). pasa = ganador del partido (para el bonus).
+function koReal(k){
+  const m = LL.llaves[k]; const e = koLive[k];
+  if(e && e.g90 && e.g90[0]!=null && e.g90[1]!=null){
+    return {gl:e.g90[0], gv:e.g90[1], pasa:e.winner||m.realPasa||null,
+            live:e.state==='in', post:e.state==='post', wentET:!!e.wentET,
+            gFinal:e.gFinal||null, clock:e.clock||""};
+  }
+  return {gl:m.realGL, gv:m.realGV, pasa:m.realPasa,
+          live:false, post:(m.realGL!=null && m.realGV!=null), wentET:false, gFinal:null, clock:""};
+}
+
+function computeKo(){
+  koByName = {};
+  if(!LL || !Array.isArray(LL.llaves) || !LL.pronosticos) return;
+  const lv = LL.llaves;
+  for(const name in LL.pronosticos){
+    const preds = LL.pronosticos[name] || [];
+    let marker=0, bonus=0, exact=0, scored=0, played=0;
+    const perMatch = [];                              // puntos (marcador+bonus) por cruce jugado, para rachas
+    lv.forEach((m,k)=>{
+      const R = koReal(k);
+      if(R.gl==null || R.gv==null){ perMatch.push(null); return; }   // cruce aún no jugado
+      played++;
+      const pr = preds[k] || [null,null,null];
+      let s = scoreOne([pr[0],pr[1]],[R.gl,R.gv]); if(s===null) s=0;   // puntaje sobre los 90'
+      marker+=s; if(s>0)scored++; if(s===6)exact++;
+      const b = KO_BONUS[norm(m.ronda)] || 0;          // bonus por acertar quién avanza
+      let bn = 0;
+      if(b && pr[2] && R.pasa && norm(pr[2])===norm(R.pasa)) bn=b;
+      bonus+=bn;
+      perMatch.push(s+bn);
+    });
+    koByName[norm(name)] = {total:marker+bonus, marker, bonus, exact, scored, played, perMatch};
+  }
+}
+
 // reconstruye `real` = oficial + overlay de ESPN (terminados que falten + en vivo)
 function applyEspn(){
   real = realOficial.map(x=>[x[0],x[1]]);
@@ -333,7 +480,15 @@ function compute(){
       total+=s; if(s>0)scored++; else blank++; if(s===6)exact++;
       if(liveIdx.has(i)) enJuego+=s;
     }
-    return {name:p.name,total,scored,blank,exact,enJuego};
+    const ko = koByName[norm(p.name)] || {total:0,scored:0,exact:0,played:0,marker:0,bonus:0};
+    total += ko.total;                       // suma fase de llaves al total
+    scored += ko.scored;                     // contadores combinados (todo el torneo)
+    exact += ko.exact;
+    blank += (ko.played - ko.scored);
+    const seq = combinedPoints(p);                       // rachas sobre todo el torneo
+    const streakHit = longestRun(seq, v=>v>0);           // mejor racha puntuando
+    const streakCold = longestRun(seq, v=>v===0);        // peor racha en blanco
+    return {name:p.name,total,scored,blank,exact,enJuego,ko,streakHit,streakCold};
   });
   rows.sort((a,b)=> b.total-a.total||b.exact-a.exact||b.scored-a.scored||a.blank-b.blank||a.name.localeCompare(b.name));
   rows.forEach(r=> r.pos = 1 + rows.filter(o=>o.total>r.total).length);
@@ -396,18 +551,36 @@ function renderRanking(){
     const r=top3[idx]; if(!r) return '<div></div>';
     const cls=idx===0?"tile gold":"tile";
     const ej = r.enJuego>0?`<span class="ej">🔴+${r.enJuego}</span>`:"";
+    const koPts = r.ko?r.ko.total:0; const grPts = r.total - koPts;
     return `<div class="${cls}"><div class="medal">${idx+1}</div>
       <div class="pname">${esc(r.name)}</div>
       <div class="pscore">${r.total}</div><div class="plab">puntos${ej?" · en juego":""}</div>
-      <div class="mini"><span>🎯<b>${r.scored}</b></span><span>🔥<b>${r.exact}</b></span>${ej}</div></div>`;
+      <div class="mini"><span>Grupos<b>${grPts}</b></span><span>🗝️<b>${koPts}</b></span>${ej}</div></div>`;
   }).join("");
-  document.getElementById("rankBody").innerHTML = rows.map(r=>`
+  // Tabla 1: detalle de la fase de LLAVES (ordenada por total general, igual que el podio)
+  document.getElementById("koDetailBody").innerHTML = rows.map(r=>{
+    const ko = r.ko || {scored:0,played:0,exact:0,bonus:0,total:0};
+    const blank = (ko.played||0) - (ko.scored||0);
+    return `
     <tr class="${r.pos===1?'top1':''}">
       <td class="pos">${r.pos}</td><td class="l nm">${esc(r.name)}</td>
-      <td><span class="chip ${r.scored?'g':'zero'}">${r.scored}</span></td>
-      <td><span class="chip ${r.blank?'b':'zero'}">${r.blank}</span></td>
-      <td><span class="chip ${r.exact?'e':'zero'}">${r.exact}</span></td>
-      <td class="tot">${r.total}${r.enJuego>0?` <span class="ej">🔴+${r.enJuego}</span>`:""}</td></tr>`).join("");
+      <td><span class="chip ${ko.scored?'g':'zero'}">${ko.scored||0}</span></td>
+      <td><span class="chip ${blank?'b':'zero'}">${blank}</span></td>
+      <td><span class="chip ${ko.exact?'e':'zero'}">${ko.exact||0}</span></td>
+      <td><span class="chip ${ko.bonus?'e':'zero'}">${ko.bonus||0}</span></td>
+      <td class="tot">${ko.total||0}</td></tr>`;
+  }).join("");
+
+  // Tabla 2: resumen grupos / llaves / total (lo que define al ganador)
+  document.getElementById("totalBody").innerHTML = rows.map(r=>{
+    const koPts = r.ko?r.ko.total:0; const grPts = r.total - koPts;
+    return `
+    <tr class="${r.pos===1?'top1':''}">
+      <td class="pos">${r.pos}</td><td class="l nm">${esc(r.name)}</td>
+      <td><span class="chip ${grPts?'g':'zero'}">${grPts}</span></td>
+      <td><span class="chip ${koPts?'e':'zero'}">${koPts}</span></td>
+      <td class="tot">${r.total}${r.enJuego>0?` <span class="ej">🔴+${r.enJuego}</span>`:""}</td></tr>`;
+  }).join("");
   // marca provisional en el título
   const h2=document.querySelector("#ranking h2");
   if(h2) h2.innerHTML = "🏆 Ranking oficial" + (prov?'<span class="provtag">🔴 provisional</span>':"");
@@ -415,6 +588,8 @@ function renderRanking(){
     {k:'scored',cls:'g',ico:'🎯',h:'Más partidos puntuando',sub:'Quien más veces ha sumado algún punto.'},
     {k:'blank',cls:'b',ico:'🥶',h:'Más partidos en blanco',sub:'Quien más veces se quedó sin puntos.'},
     {k:'exact',cls:'e',ico:'🔥',h:'Más marcadores exactos',sub:'Quien más veces clavó el 6 (resultado exacto).'},
+    {k:'streakHit',cls:'g',ico:'⚡',h:'Mejor racha puntuando',sub:'Más partidos seguidos sumando, en todo el torneo.'},
+    {k:'streakCold',cls:'b',ico:'🧊',h:'Peor racha en blanco',sub:'Más partidos seguidos sin sumar, en todo el torneo.'},
   ];
   document.getElementById("cards").innerHTML = defs.map(d=>{
     const L=leader(rows,d.k);
@@ -422,6 +597,48 @@ function renderRanking(){
        ${L.rest.length?`<div class="runners">${L.rest.map(x=>`<span><b>${esc(x.name)}</b> · ${x[d.k]}</span>`).join("")}</div>`:""}`
       :`<div class="lead"><span class="who" style="color:var(--muted);font-weight:600;font-size:14px">Aún sin datos</span><span class="val">—</span></div>`;
     return `<div class="card ${d.cls}"><div class="stripe"></div><div class="ico">${d.ico}</div><h3>${d.h}</h3><div class="sub">${d.sub}</div>${body}</div>`;
+  }).join("") + buildCustomCards(rows);
+
+  renderCarrera(rows);
+}
+
+// tarjetas extra: arriesgado vs conservador, y la cábala más fuerte
+function buildCustomCards(rows){
+  let out="";
+  const risk=DATA.players.map(p=>({name:p.name,r:riskIndex(p)})).filter(x=>x.r>0);
+  if(risk.length){
+    const arr=risk.slice().sort((a,b)=>b.r-a.r)[0], con=risk.slice().sort((a,b)=>a.r-b.r)[0];
+    out += `<div class="card g"><div class="stripe"></div><div class="ico">🎲</div>
+      <h3>Arriesgado vs conservador</h3><div class="sub">Promedio de goles que pronostica cada uno.</div>
+      <div class="lead"><span class="who">${esc(arr.name)}</span><span class="val">${arr.r.toFixed(1)}</span></div>
+      <div class="runners"><span>🎲 más jugado: <b>${esc(arr.name)}</b> · ${arr.r.toFixed(1)} goles/pred</span>
+        <span>🧊 más cauto: <b>${esc(con.name)}</b> · ${con.r.toFixed(1)} goles/pred</span></div></div>`;
+  }
+  const bonds=[];
+  DATA.players.forEach(p=>{ const tp=teamPoints(p); for(const t in tp){ if(tp[t]>0) bonds.push({pts:tp[t],name:p.name,team:t}); } });
+  bonds.sort((a,b)=> b.pts-a.pts || a.name.localeCompare(b.name));
+  if(bonds.length){
+    const top=bonds[0], resto=bonds.slice(1,3);
+    out += `<div class="card e"><div class="stripe"></div><div class="ico">🍀</div>
+      <h3>La cábala</h3><div class="sub">Los vínculos jugador–selección que más puntos han dado.</div>
+      <div class="lead"><span class="who">${esc(top.name)} con ${esc(top.team)}</span><span class="val">${top.pts}</span></div>
+      ${resto.length?`<div class="runners">${resto.map(b=>`<span><b>${esc(b.name)}</b> con ${esc(b.team)} · ${b.pts}</span>`).join("")}</div>`:""}</div>`;
+  }
+  return out;
+}
+
+// carrera al líder: barra de cada jugador relativa al puntero
+function renderCarrera(rows){
+  const box=document.getElementById("carreraBox"); if(!box) return;
+  const lead=rows[0]; if(!lead || lead.total<=0){ box.innerHTML=""; return; }
+  const max=lead.total;
+  box.innerHTML = `<div class="carrera-h">📊 La carrera al líder</div>` + rows.map((r,i)=>{
+    const pct=Math.max(3, Math.round(r.total/max*100));
+    const gap=max-r.total;
+    const tag=i===0?`<span class="cg lead">puntero</span>`:`<span class="cg">−${gap}</span>`;
+    return `<div class="crow"><span class="cn">${i+1}. ${esc(r.name)}</span>
+      <span class="cbar"><span class="cfill ${i===0?'first':''}" style="width:${pct}%"></span></span>
+      <span class="cpts">${r.total}</span>${tag}</div>`;
   }).join("");
 }
 
@@ -542,6 +759,46 @@ function renderChart(){
 
 function playedOrder(){ return DATA.fixtures.map((_,i)=>i).filter(isPlayed).sort((a,b)=>dateKey(a)-dateKey(b)||a-b); }
 function streakOf(player,order){ let n=0; for(let k=order.length-1;k>=0;k--){ let s=scoreOne(player.preds[order[k]],real[order[k]]); if(s&&s>0)n++; else break; } return n; }
+
+// secuencia de puntos de un jugador en TODOS sus partidos jugados: grupos (por fecha) + llaves (orden del JSON)
+function combinedPoints(player){
+  const seq=[];
+  playedOrder().forEach(i=>{ let s=scoreOne(player.preds[i],real[i]); if(s===null)s=0; seq.push(s); });
+  const ko = koByName[norm(player.name)];
+  if(ko && ko.perMatch) ko.perMatch.forEach(v=>{ if(v!=null) seq.push(v); });
+  return seq;
+}
+// racha más larga donde se cumple `pred` (ej. puntuó / quedó en blanco)
+function longestRun(seq, pred){ let best=0,cur=0; for(const v of seq){ if(pred(v)){cur++; if(cur>best)best=cur;} else cur=0; } return best; }
+// racha ACTUAL (desde el final) donde se cumple `pred`
+function trailingRun(seq, pred){ let n=0; for(let k=seq.length-1;k>=0;k--){ if(pred(seq[k]))n++; else break; } return n; }
+
+// pronósticos de llaves de un jugador (calza por nombre normalizado con las pestañas del Sheet)
+function koPredsFor(name){
+  if(!LL || !LL.pronosticos) return null;
+  for(const k in LL.pronosticos){ if(norm(k)===norm(name)) return LL.pronosticos[k]; }
+  return null;
+}
+// índice de riesgo: promedio de goles totales que pronostica (alto = jugado, bajo = conservador)
+function riskIndex(player){
+  let g=0,n=0;
+  (player.preds||[]).forEach(pr=>{ if(pr&&pr[0]!=null&&pr[1]!=null){ g+=pr[0]+pr[1]; n++; } });
+  const kp=koPredsFor(player.name);
+  if(kp) kp.forEach(pr=>{ if(pr&&pr[0]!=null&&pr[1]!=null){ g+=pr[0]+pr[1]; n++; } });
+  return n? g/n : 0;
+}
+// puntos acumulados por selección (cábala): suma lo que sacó en partidos donde jugó cada equipo
+function teamPoints(player){
+  const acc={};
+  playedOrder().forEach(i=>{ let s=scoreOne(player.preds[i],real[i]); if(s===null)s=0;
+    const f=DATA.fixtures[i]; acc[f.local]=(acc[f.local]||0)+s; acc[f.visitante]=(acc[f.visitante]||0)+s; });
+  const ko=koByName[norm(player.name)];
+  if(ko && ko.perMatch && LL && LL.llaves){
+    ko.perMatch.forEach((v,k)=>{ if(v==null) return; const m=LL.llaves[k];
+      if(m.local) acc[m.local]=(acc[m.local]||0)+v; if(m.visita) acc[m.visita]=(acc[m.visita]||0)+v; });
+  }
+  return acc;
+}
 function tkE(t){ return `<span class="em">${esc(t)}</span>`; }
 function tkH(t){ return `<span class="hot">${esc(t)}</span>`; }
 function buildTickerItems(){
@@ -573,6 +830,24 @@ function buildTickerItems(){
   if(totalEx>0) it.push(`📊 ${tkE(totalEx)} marcadores exactos en la polla hasta ahora`);
   const last=rows[rows.length-1];
   it.push(`🐌 ${esc(last.name)} cierra la tabla con ${esc(last.total)} pts… aún hay torneo`);
+
+  // racha actual en blanco (pulla al que no achunta)
+  let cold={n:0,name:""}; DATA.players.forEach(p=>{ const n=trailingRun(combinedPoints(p),v=>v===0); if(n>cold.n)cold={n,name:p.name}; });
+  if(cold.n>=2) it.push(`💀 ${tkE(cold.name)} lleva ${tkH(cold.n)} partidos al hilo sin achuntarle`);
+
+  // el más arriesgado y el más conservador (estilo de pronóstico)
+  const risk=DATA.players.map(p=>({name:p.name,r:riskIndex(p)})).filter(x=>x.r>0);
+  if(risk.length){
+    const arr=risk.slice().sort((a,b)=>b.r-a.r)[0], con=risk.slice().sort((a,b)=>a.r-b.r)[0];
+    it.push(`🎲 ${tkE(arr.name)} es el más jugado: promedia ${tkH(arr.r.toFixed(1))} goles por pronóstico`);
+    it.push(`🧊 ${tkE(con.name)} el más cauto: ${tkH(con.r.toFixed(1))} goles por pronóstico`);
+  }
+
+  // la cábala más fuerte (mejor vínculo jugador-selección)
+  let bond={pts:0,name:"",team:""};
+  DATA.players.forEach(p=>{ const tp=teamPoints(p); for(const t in tp){ if(tp[t]>bond.pts)bond={pts:tp[t],name:p.name,team:t}; } });
+  if(bond.pts>0) it.push(`🍀 Cuando juega ${tkE(bond.team)}, ${tkE(bond.name)} suma (${tkH(bond.pts+" pts")} en total)`);
+
   return it;
 }
 function renderTicker(){
@@ -583,7 +858,106 @@ function renderTicker(){
   track.style.setProperty("--tdur", Math.max(22, items.length*5)+"s");
 }
 
-function recompute(){ applyEspn(); renderTicker(); renderLive(); renderRanking(); renderResults(); renderChart(); }
+function renderLlaves(){
+  const roundsBox=document.getElementById("koRounds");
+  if(!roundsBox) return;
+
+  if(!LL || !Array.isArray(LL.llaves)){
+    roundsBox.innerHTML = `<div class="ph" style="padding:18px">Aún no hay datos de la fase de llaves. Aparecerán cuando el proceso automático lea el Google Sheets.</div>`;
+    return;
+  }
+
+  // cruces agrupados por ronda, en el orden del JSON (con índice global k)
+  const orden=[]; const porRonda={};
+  LL.llaves.forEach((m,k)=>{ if(!(m.ronda in porRonda)){ porRonda[m.ronda]=[]; orden.push(m.ronda); } porRonda[m.ronda].push({m,k}); });
+  roundsBox.innerHTML = orden.map(ronda=>{
+    const cruces = porRonda[ronda].map(({m,k})=>{
+      const R = koReal(k);
+      const jugado = R.gl!=null && R.gv!=null;
+      const definido = !!(m.local && m.visita);
+      const clk = jugado || definido;
+      const loc = esc(m.local||"—"), vis = esc(m.visita||"—");
+      const exp = clk ? `<span class="koexp">▾</span>` : "";
+      let row;
+      if(!jugado){
+        row = `<div class="kocruce pend"><span class="kot">${loc}</span><span class="kovs">vs</span><span class="kot">${vis}</span><span class="kostat">por jugar</span>${exp}</div>`;
+      }else{
+        // marcador 90' (el que puntúa). Si fue a alargue, mostramos también el final.
+        const etTag = R.wentET && R.gFinal ? `<span class="koet">${R.gFinal[0]}-${R.gFinal[1]} c/alargue</span>` : "";
+        let estado;
+        if(R.live) estado = `<span class="kostat live"><span class="livedot"></span>en vivo ${esc(R.clock||"")}</span>`;
+        else estado = `<span class="kostat ok">${R.pasa?`avanza <b>${esc(R.pasa)}</b>`:"jugado"}</span>`;
+        row = `<div class="kocruce ${R.live?'envivo':''}"><span class="kot">${loc}</span>
+          <span class="koscorewrap"><span class="koscore">${R.gl}-${R.gv}</span>${etTag}</span>
+          <span class="kot">${vis}</span>${estado}${exp}</div>`;
+      }
+      return `<div class="komatch ${jugado?'played':''} ${R.live?'live':''} ${clk?'clk':''}" data-k="${k}">${row}<div class="kopreds"></div></div>`;
+    }).join("");
+    return `<div class="koround"><div class="korhead">${esc(ronda)} <span class="korb">+${KO_BONUS[norm(ronda)]||0} por avance</span></div>${cruces}</div>`;
+  }).join("");
+
+  roundsBox.querySelectorAll(".komatch.clk").forEach(el=>{
+    el.querySelector(".kocruce").addEventListener("click", ()=>{
+      el.classList.toggle("open");
+      el.querySelector(".kopreds").innerHTML = buildKoPredsPanel(+el.dataset.k);
+    });
+  });
+}
+
+function buildKoPredsPanel(k){
+  if(!LL || !LL.llaves[k]) return "";
+  const m = LL.llaves[k];
+  const R = koReal(k);
+  const jugado = R.gl!=null && R.gv!=null;
+  const b = KO_BONUS[norm(m.ronda)] || 0;
+  const rows = Object.keys(LL.pronosticos||{}).map(name=>{
+    const pr = (LL.pronosticos[name]||[])[k] || [null,null,null];
+    const has = pr[0]!=null && pr[1]!=null;
+    const pred = has ? `${pr[0]}-${pr[1]}` : "—";
+    let mk = jugado ? scoreOne([pr[0],pr[1]],[R.gl,R.gv]) : null;
+    if(jugado && mk===null) mk=0;
+    let bn = 0;
+    if(jugado && b && pr[2] && R.pasa && norm(pr[2])===norm(R.pasa)) bn=b;
+    const tot = jugado ? mk+bn : null;
+    return {name, pred, avanza:pr[2]||null, mk, bn, tot, has};
+  });
+  if(jugado) rows.sort((a,b)=> b.tot-a.tot || a.name.localeCompare(b.name));
+  else rows.sort((a,b)=> a.name.localeCompare(b.name));
+
+  // bloque de trazabilidad: de dónde salen los puntos de este cruce
+  let traza = "";
+  if(jugado){
+    const loc = esc(m.local||"Local"), vis = esc(m.visita||"Visitante");
+    const r90 = `${R.gl}-${R.gv}`;
+    const rFull = (R.wentET && R.gFinal) ? `${R.gFinal[0]}-${R.gFinal[1]} (con alargue)` : r90;
+    const pasa = R.pasa ? esc(R.pasa) : "—";
+    const liveTag = R.live ? ` <span class="kobonus">en vivo</span>` : "";
+    traza = `<div class="kotraza">
+      <div class="ktr"><span class="ktk">90 minutos</span><span class="ktv">${loc} ${r90} ${vis}${liveTag}</span></div>
+      <div class="ktr"><span class="ktk">Resultado completo</span><span class="ktv">${loc} ${rFull} ${vis}</span></div>
+      <div class="ktr"><span class="ktk">Quién pasa</span><span class="ktv"><b>${pasa}</b></span></div>
+    </div>`;
+  }
+
+  const head = R.live ? `<div class="ph">🔴 Puntos en vivo (provisional, sobre los 90')</div>`
+              : jugado ? `<div class="ph">Apuestas y puntos de este cruce</div>`
+                       : `<div class="ph">Apuestas · el cruce aún no se juega</div>`;
+  const body = rows.map(r=>{
+    const av = r.avanza ? `<span class="koav">→ ${esc(r.avanza)}</span>` : `<span class="koav none">→ —</span>`;
+    let pp;
+    if(jugado){
+      const cls = r.mk===6?'p6':(r.tot>0?(r.mk===4?'p4':'p2'):'p0');
+      const bonusTag = r.bn>0 ? ` <span class="kobonus">${r.mk}+${r.bn}</span>` : "";
+      pp = `<span class="pp ${cls}">${r.tot} pt${r.tot===1?"":"s"}${bonusTag}</span>`;
+    }else{
+      pp = `<span class="pp pend">${r.has?"pendiente":"sin apuesta"}</span>`;
+    }
+    return `<div class="koprow"><span class="pn">${esc(r.name)}</span><span class="pg">${r.pred}</span>${av}${pp}</div>`;
+  }).join("");
+  return traza + head + body;
+}
+
+function recompute(){ applyEspn(); computeKo(); renderTicker(); renderLive(); renderRanking(); renderResults(); renderLlaves(); renderChart(); }
 
 async function loadOficial(showFlash){
   try{
@@ -614,41 +988,71 @@ const base="https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scor
 const [r1,r2]=await Promise.all([fetch(base+fmt(hoy),{cache:"no-store"}),fetch(base+fmt(ayer),{cache:"no-store"})]);
 if(!r1.ok&&!r2.ok) throw new Error("http");
 const [j1,j2]=await Promise.all([r1.json(),r2.json()]);
-const live=[], post=[];
+const live=[], post=[]; const koNew={};
 const eventos=[...(j1.events||[]),...(j2.events||[])];
 eventos.forEach(ev=>{
       const comp=(ev.competitions||[])[0]; if(!comp) return;
       const state=(((ev.status||{}).type)||{}).state;          // 'pre' | 'in' | 'post'
       const clock=(((ev.status||{}).type)||{}).shortDetail || ((ev.status||{}).displayClock) || "";
-      let hN,aN,gh,ga;
-      (comp.competitors||[]).forEach(c=>{
-        const nm=(c.team||{}).displayName || (c.team||{}).name;
-        let sc=parseInt(c.score,10); if(isNaN(sc)) sc=null;
-        if(c.homeAway==="home"){ hN=nm; gh=sc; } else if(c.homeAway==="away"){ aN=nm; ga=sc; }
-      });
+      let hC,aC;
+      (comp.competitors||[]).forEach(c=>{ if(c.homeAway==="home") hC=c; else if(c.homeAway==="away") aC=c; });
+      if(!hC||!aC) return;
+      const hN=(hC.team||{}).displayName||(hC.team||{}).name;
+      const aN=(aC.team||{}).displayName||(aC.team||{}).name;
+      let gh=parseInt(hC.score,10); if(isNaN(gh)) gh=null;
+      let ga=parseInt(aC.score,10); if(isNaN(ga)) ga=null;
       const he=teamES(hN), ae=teamES(aN);
       if(!he||!ae||gh==null||ga==null) return;
-      const fx=fixtureIndex(he,ae); if(!fx) return;
-      const gl=fx.swap?ga:gh, gv=fx.swap?gh:ga;
-      const homeES=fx.swap?ae:he, awayES=fx.swap?he:ae;
-      if(state==="in") live.push({i:fx.i, gl, gv, clock, homeES, awayES});
-      else if(state==="post") post.push({i:fx.i, gl, gv});
+
+      // GRUPOS: el marcador total es el de los 90' (no hay alargue). Igual que antes.
+      const fx=fixtureIndex(he,ae);
+      if(fx){
+        const gl=fx.swap?ga:gh, gv=fx.swap?gh:ga;
+        const homeES=fx.swap?ae:he, awayES=fx.swap?he:ae;
+        if(state==="in") live.push({i:fx.i, gl, gv, clock, homeES, awayES});
+        else if(state==="post") post.push({i:fx.i, gl, gv});
+      }
+
+      // LLAVES: 90' para el puntaje + ganador del partido para el bonus de avance.
+      // SOLO partidos en vivo o terminados; los programados ESPN los da 0-0 y serían un resultado falso.
+      const kx=koIndex(he,ae);
+      if(kx && (state==="in" || state==="post")){
+        const g90h=goles90(hC), g90a=goles90(aC);
+        const l90 = g90h!=null ? g90h : gh;     // si no hay linescores, usa el total (válido sin alargue)
+        const v90 = g90a!=null ? g90a : ga;
+        const winnerNm = hC.winner===true ? he : (aC.winner===true ? ae : null);
+        const wentET = (Array.isArray(hC.linescores)&&hC.linescores.length>2) ||
+                       (Array.isArray(aC.linescores)&&aC.linescores.length>2);
+        const gl90=kx.swap?v90:l90, gv90=kx.swap?l90:v90;     // orientado a local/visitante del cruce
+        const glF =kx.swap?ga:gh,  gvF =kx.swap?gh:ga;        // marcador final (con alargue si hubo)
+        koNew[kx.k] = {state, clock, g90:[gl90,gv90], gFinal:[glF,gvF], winner:winnerNm, wentET};
+      }
     });
-    espnLive=live; espnPost=post;
+    espnLive=live; espnPost=post; koLive=koNew;
   }catch(e){
-    espnLive=[]; espnPost=[];   // si ESPN falla o bloquea CORS, seguimos con lo oficial
+    espnLive=[]; espnPost=[]; koLive={};   // si ESPN falla o bloquea CORS, seguimos con lo oficial/Sheet
   }finally{ recompute(); }
+}
+
+async function loadLlaves(){
+  try{
+    const res=await fetch("./pronosticos_llaves.json",{cache:"no-store"});
+    if(!res.ok) throw new Error("http "+res.status);
+    LL = await res.json();
+  }catch(e){ LL = null; }
+  finally{ computeKo(); recompute(); }
 }
 
 function refreshAll(flashIt){
   const btn=document.getElementById("btnReload"); btn.classList.add("loading");
-  Promise.all([loadOficial(flashIt), loadVivo()]).finally(()=>setTimeout(()=>btn.classList.remove("loading"),400));
+  Promise.all([loadOficial(flashIt), loadVivo(), loadLlaves()]).finally(()=>setTimeout(()=>btn.classList.remove("loading"),400));
 }
 
 document.getElementById("btnReload").onclick=()=>refreshAll(true);
 refreshAll(false);
 setInterval(loadOficial, 120000); // oficial cada 2 min
 setInterval(loadVivo, 60000);     // en vivo cada 1 min
+setInterval(loadLlaves, 120000);  // llaves cada 2 min
 </script>
 </body>
 </html>
