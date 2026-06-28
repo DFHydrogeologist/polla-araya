@@ -2,8 +2,8 @@ name: Actualizar resultados
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # cada 30 minutos (UTC)
-  workflow_dispatch:          # permite ejecutarlo a mano desde la pestaña Actions
+    - cron: "*/30 * * * *"   # cada 30 minutos (UTC) — GitHub puede atrasarlo; gatilla a mano si urge
+  workflow_dispatch:          # botón "Run workflow" manual en la pestaña Actions
 
 permissions:
   contents: write
@@ -22,21 +22,27 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Traer resultados desde la API
+      - name: Traer resultados de grupos desde la API
         env:
           POLLA_PROVIDER: ${{ vars.POLLA_PROVIDER || 'apifootball' }}
           APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
           FOOTBALLDATA_TOKEN: ${{ secrets.FOOTBALLDATA_TOKEN }}
         run: python scripts/fetch_resultados.py
 
-      - name: Commit si cambió
+      - name: Traer apuestas y resultados de llaves (Google Sheets + ESPN)
+        env:
+          POLLA_SHEET_ID: ${{ vars.POLLA_SHEET_ID || '1-t_WM9hMKGmA9E9xsfvLGnhU-kP_rF5RTsU-f9Ibl9s' }}
+          POLLA_PERSONAS: ${{ vars.POLLA_PERSONAS || 'Pipe,Macarena,Betty,Diego,Claude,Doris,Pedro,Paula' }}
+        run: python scripts/leer_apuestas.py
+
+      - name: Commit si cambio algo
         run: |
           git config user.name  "polla-bot"
           git config user.email "polla-bot@users.noreply.github.com"
-          if ! git diff --quiet -- resultados.json; then
-            git add resultados.json
-            git commit -m "Actualizar resultados ($(date -u +%FT%TZ))"
+          git add resultados.json pronosticos_llaves.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar polla familiar ($(date -u +%FT%TZ))"
             git push
           else
-            echo "Sin cambios en resultados.json"
+            echo "Sin cambios"
           fi
