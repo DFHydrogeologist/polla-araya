@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-06-28T17:37:12.211695+00:00",
+ "updatedAt": "2026-06-28T18:08:11.214307+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T18:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -16,7 +16,7 @@
    "visita": "Paraguay",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Alemania"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -25,7 +25,7 @@
    "visita": "Suecia",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Francia"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -34,7 +34,7 @@
    "visita": "Canadá",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Canadá"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -43,7 +43,7 @@
    "visita": "Marruecos",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Marruecos"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -52,7 +52,7 @@
    "visita": "Croacia",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Portugal"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -61,7 +61,7 @@
    "visita": "Austria",
    "realGL": null,
    "realGV": null,
-   "realPasa": "España"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -70,7 +70,7 @@
    "visita": "Bosnia y Herzegovina",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Estados Unidos"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -79,7 +79,7 @@
    "visita": "Senegal",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Bélgica"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -88,7 +88,7 @@
    "visita": "Japón",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Brasil"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -97,7 +97,7 @@
    "visita": "Noruega",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Noruega"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -106,16 +106,16 @@
    "visita": "Ecuador",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Ecuador"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
    "cruce": "Cruce 12",
    "local": "Inglaterra",
-   "visita": "Congo",
+   "visita": "DR Congo",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Inglaterra"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -124,7 +124,7 @@
    "visita": "Cabo Verde",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Argentina"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -133,7 +133,7 @@
    "visita": "Egipto",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Egipto"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -142,7 +142,7 @@
    "visita": "Argelia",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Suiza"
+   "realPasa": null
   },
   {
    "ronda": "Ronda de 32",
@@ -151,7 +151,7 @@
    "visita": "Ghana",
    "realGL": null,
    "realGV": null,
-   "realPasa": "Colombia"
+   "realPasa": null
   },
   {
    "ronda": "Octavos",
