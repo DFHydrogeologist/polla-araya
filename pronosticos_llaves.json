@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-06-28T17:11:36.517752+00:00",
+ "updatedAt": "2026-06-28T17:15:53.368018+00:00",
  "deadlines": {
-  "rondade32": "2026-06-28T17:00:00+00:00",
+  "rondade32": "2026-06-28T18:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
   "cuartos": "2026-07-09T18:00:00+00:00",
   "semifinal": "2026-07-14T18:00:00+00:00",
@@ -483,13 +483,13 @@
     "Países Bajos"
    ],
    [
-    null,
-    null,
+    2,
+    1,
     "Portugal"
    ],
    [
-    null,
-    null,
+    2,
+    0,
     "España"
    ],
    [
@@ -498,9 +498,9 @@
     "USA"
    ],
    [
-    null,
-    null,
-    "Bélgica"
+    1,
+    3,
+    "Senegal"
    ],
    [
     2,
@@ -513,13 +513,13 @@
     "Noruega"
    ],
    [
-    null,
-    null,
-    "Ecuador"
+    2,
+    0,
+    "México"
    ],
    [
-    null,
-    null,
+    3,
+    2,
     "Inglaterra"
    ],
    [
@@ -533,13 +533,13 @@
     "Egipto"
    ],
    [
-    null,
-    null,
-    "Suiza"
+    0,
+    1,
+    "Argelia"
    ],
    [
-    null,
-    null,
+    2,
+    0,
     "Colombia"
    ],
    [
@@ -1111,84 +1111,84 @@
   ],
   "Doris": [
    [
-    null,
-    null,
-    null
+    2,
+    0,
+    "Alemania"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Francia"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    1,
+    "Canadá"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    2,
+    "Marruecos"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "Portugal"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    0,
+    "España"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    1,
+    "Bosnia y Herzegovina"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    1,
+    "Bélgica"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Brasil"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Noruega"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    2,
+    "Ecuador"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Inglaterra"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Argentina"
    ],
    [
-    null,
-    null,
-    null
+    0,
+    2,
+    "Egipto"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    0,
+    "Suiza"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Colombia"
    ],
    [
     null,
@@ -1273,38 +1273,38 @@
   ],
   "Pedro": [
    [
-    null,
-    null,
+    3,
+    0,
     "Alemania"
    ],
    [
-    null,
-    null,
+    2,
+    1,
     "Francia"
    ],
    [
-    null,
-    null,
-    "Canadá"
+    1,
+    0,
+    "Sudáfrica"
    ],
    [
-    null,
-    null,
-    "Marruecos"
+    2,
+    0,
+    "Países Bajos"
    ],
    [
-    null,
-    null,
-    "Portugal"
+    1,
+    2,
+    "Croacia"
    ],
    [
-    null,
-    null,
+    1,
+    0,
     "España"
    ],
    [
-    null,
-    null,
+    2,
+    0,
     "Estados Unidos"
    ],
    [
