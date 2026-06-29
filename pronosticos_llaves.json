@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-06-29T20:05:30.669767+00:00",
+ "updatedAt": "2026-06-29T21:53:06.142412+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T20:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -86,9 +86,9 @@
    "cruce": "Cruce 9",
    "local": "Brasil",
    "visita": "Japón",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 2,
+   "realGV": 1,
+   "realPasa": "Brasil"
   },
   {
    "ronda": "Ronda de 32",
