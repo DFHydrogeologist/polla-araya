@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-06-30T17:24:51.777128+00:00",
+ "updatedAt": "2026-06-30T19:20:19.846066+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T20:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -95,9 +95,9 @@
    "cruce": "Cruce 10",
    "local": "Costa de Marfil",
    "visita": "Noruega",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 1,
+   "realGV": 2,
+   "realPasa": "Noruega"
   },
   {
    "ronda": "Ronda de 32",
@@ -156,7 +156,7 @@
   {
    "ronda": "Octavos",
    "cruce": "Cruce 1",
-   "local": "Equipo",
+   "local": "Paraguay",
    "visita": "Equipo",
    "realGL": null,
    "realGV": null,
@@ -165,8 +165,8 @@
   {
    "ronda": "Octavos",
    "cruce": "Cruce 2",
-   "local": "Equipo",
-   "visita": "Equipo",
+   "local": "Canadá",
+   "visita": "Marruecos",
    "realGL": null,
    "realGV": null,
    "realPasa": null
@@ -192,8 +192,8 @@
   {
    "ronda": "Octavos",
    "cruce": "Cruce 5",
-   "local": "Equipo",
-   "visita": "Equipo",
+   "local": "Brasil",
+   "visita": "Noruega",
    "realGL": null,
    "realGV": null,
    "realPasa": null
