@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-06-30T01:31:22.420121+00:00",
+ "updatedAt": "2026-06-30T06:17:14.624659+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T20:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -41,9 +41,9 @@
    "cruce": "Cruce 4",
    "local": "Países Bajos",
    "visita": "Marruecos",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 1,
+   "realGV": 1,
+   "realPasa": "Marruecos"
   },
   {
    "ronda": "Ronda de 32",
