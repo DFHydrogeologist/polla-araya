@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-06-30T22:51:15.644818+00:00",
+ "updatedAt": "2026-07-01T00:11:56.271169+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T20:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -23,9 +23,9 @@
    "cruce": "Cruce 2",
    "local": "Francia",
    "visita": "Suecia",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 3,
+   "realGV": 0,
+   "realPasa": "Francia"
   },
   {
    "ronda": "Ronda de 32",
@@ -148,7 +148,7 @@
    "ronda": "Ronda de 32",
    "cruce": "Cruce 16",
    "local": "Colombia",
-   "visita": "Ghana",
+   "visita": "Francia",
    "realGL": null,
    "realGV": null,
    "realPasa": null
