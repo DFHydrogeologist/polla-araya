@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-01T17:29:43.629590+00:00",
+ "updatedAt": "2026-07-01T19:21:47.812413+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T20:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -113,9 +113,9 @@
    "cruce": "Cruce 12",
    "local": "Inglaterra",
    "visita": "DR Congo",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 2,
+   "realGV": 1,
+   "realPasa": "Inglaterra"
   },
   {
    "ronda": "Ronda de 32",
