@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-02T13:18:35.878191+00:00",
+ "updatedAt": "2026-07-02T15:41:55.264976+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T17:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -178,7 +178,7 @@
    "ronda": "Ronda de 32",
    "cruce": "Cruce 16",
    "local": "Colombia",
-   "visita": "Francia",
+   "visita": "Ghana",
    "realGL": null,
    "realGV": null,
    "realPasa": null
@@ -187,7 +187,7 @@
    "ronda": "Octavos",
    "cruce": "Cruce 1",
    "local": "Paraguay",
-   "visita": "Equipo",
+   "visita": "Francia",
    "realGL": null,
    "realGV": null,
    "realPasa": null
@@ -204,8 +204,8 @@
   {
    "ronda": "Octavos",
    "cruce": "Cruce 3",
-   "local": "Equipo",
-   "visita": "Equipo",
+   "local": "Estados Unidos",
+   "visita": "Bélgica",
    "realGL": null,
    "realGV": null,
    "realPasa": null
@@ -231,8 +231,8 @@
   {
    "ronda": "Octavos",
    "cruce": "Cruce 6",
-   "local": "Equipo",
-   "visita": "Equipo",
+   "local": "México",
+   "visita": "Inglaterra",
    "realGL": null,
    "realGV": null,
    "realPasa": null
