@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-01T22:48:26.810838+00:00",
+ "updatedAt": "2026-07-02T00:13:38.430638+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T20:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -77,9 +77,9 @@
    "cruce": "Cruce 8",
    "local": "Bélgica",
    "visita": "Senegal",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 3,
+   "realGV": 2,
+   "realPasa": "Bélgica"
   },
   {
    "ronda": "Ronda de 32",
