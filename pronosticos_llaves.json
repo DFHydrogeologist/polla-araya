@@ -232,12 +232,9 @@
    "cruce": "Cruce 4",
    "local": "Portugal",
    "visita": "España",
-   "realGL": 3,
-   "realGV": 0,
-   "realPasa": "España",
-   "realFinalGL": 3,
-   "realFinalGV": 0,
-   "realWentET": false
+   "realGL": null,
+   "realGV": null,
+   "realPasa": null
   },
   {
    "ronda": "Octavos_dia2",
