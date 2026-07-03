@@ -1,8 +1,13 @@
 {
- "updatedAt": "2026-07-03T19:58:15.377207+00:00",
+ "updatedAt": "2026-07-03T21:06:38.827328+00:00",
  "deadlines": {
-  "rondade32": "2026-06-28T17:00:00+00:00",
-  "octavos": "2026-07-04T18:00:00+00:00",
+  "rondade32": "2026-07-01T20:10:00+00:00",
+  "rondade32e": "2026-06-28T19:58:00+00:00",
+  "octavos": "2026-07-04T16:00:00+00:00",
+  "octavosdia1": "2026-07-04T15:00:00+00:00",
+  "octavosdia2": "2026-07-05T18:00:00+00:00",
+  "octavosdia3": "2026-07-06T17:00:00+00:00",
+  "octavosdia4": "2026-07-07T14:00:00+00:00",
   "cuartos": "2026-07-09T18:00:00+00:00",
   "semifinal": "2026-07-14T18:00:00+00:00",
   "3erpuesto": "2026-07-18T18:00:00+00:00",
@@ -167,9 +172,12 @@
    "cruce": "Cruce 14",
    "local": "Australia",
    "visita": "Egipto",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 1,
+   "realGV": 1,
+   "realPasa": "Egipto",
+   "realFinalGL": 1,
+   "realFinalGV": 1,
+   "realWentET": false
   },
   {
    "ronda": "Ronda de 32",
@@ -193,7 +201,7 @@
    "realPasa": null
   },
   {
-   "ronda": "Octavos",
+   "ronda": "Octavos_dia1",
    "cruce": "Cruce 1",
    "local": "Paraguay",
    "visita": "Francia",
@@ -202,7 +210,7 @@
    "realPasa": null
   },
   {
-   "ronda": "Octavos",
+   "ronda": "Octavos_dia1",
    "cruce": "Cruce 2",
    "local": "Canadá",
    "visita": "Marruecos",
@@ -211,7 +219,7 @@
    "realPasa": null
   },
   {
-   "ronda": "Octavos",
+   "ronda": "Octavos_dia3",
    "cruce": "Cruce 3",
    "local": "Estados Unidos",
    "visita": "Bélgica",
@@ -220,7 +228,7 @@
    "realPasa": null
   },
   {
-   "ronda": "Octavos",
+   "ronda": "Octavos_dia3",
    "cruce": "Cruce 4",
    "local": "España",
    "visita": "Austria",
@@ -232,7 +240,7 @@
    "realWentET": false
   },
   {
-   "ronda": "Octavos",
+   "ronda": "Octavos_dia2",
    "cruce": "Cruce 5",
    "local": "Brasil",
    "visita": "Noruega",
@@ -241,7 +249,7 @@
    "realPasa": null
   },
   {
-   "ronda": "Octavos",
+   "ronda": "Octavos_dia2",
    "cruce": "Cruce 6",
    "local": "México",
    "visita": "Inglaterra",
@@ -250,7 +258,7 @@
    "realPasa": null
   },
   {
-   "ronda": "Octavos",
+   "ronda": "Octavos_dia4",
    "cruce": "Cruce 7",
    "local": "Suiza",
    "visita": "Equipo",
@@ -259,10 +267,10 @@
    "realPasa": null
   },
   {
-   "ronda": "Octavos",
+   "ronda": "Octavos_dia4",
    "cruce": "Cruce 8",
    "local": "Equipo",
-   "visita": "Equipo",
+   "visita": "Egipto",
    "realGL": null,
    "realGV": null,
    "realPasa": null
@@ -909,34 +917,34 @@
     "Colombia"
    ],
    [
-    null,
-    null,
-    null
+    0,
+    3,
+    "Francia"
    ],
    [
-    null,
-    null,
-    null
+    0,
+    1,
+    "Marruecos"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "Estados Unidos"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "España"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Brasil"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    1,
+    "México"
    ],
    [
     null,
