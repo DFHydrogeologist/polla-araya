@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-03T00:10:40.341421+00:00",
+ "updatedAt": "2026-07-03T04:26:38.073692+00:00",
  "deadlines": {
   "rondade32": "2026-06-28T17:00:00+00:00",
   "octavos": "2026-07-04T18:00:00+00:00",
@@ -62,9 +62,12 @@
    "cruce": "Cruce 5",
    "local": "Portugal",
    "visita": "Croacia",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 2,
+   "realGV": 1,
+   "realPasa": "Portugal",
+   "realFinalGL": 2,
+   "realFinalGV": 1,
+   "realWentET": false
   },
   {
    "ronda": "Ronda de 32",
