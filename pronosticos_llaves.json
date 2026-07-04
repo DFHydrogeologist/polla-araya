@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-04T00:09:38.112997+00:00",
+ "updatedAt": "2026-07-04T04:20:48.588438+00:00",
  "deadlines": {
   "rondade32": "2026-07-01T20:10:00+00:00",
   "rondade32e": "2026-06-28T19:58:00+00:00",
@@ -163,9 +163,12 @@
    "cruce": "Cruce 13",
    "local": "Argentina",
    "visita": "Cabo Verde",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 1,
+   "realGV": 1,
+   "realPasa": "Argentina",
+   "realFinalGL": 3,
+   "realFinalGV": 2,
+   "realWentET": true
   },
   {
    "ronda": "Ronda de 32",
@@ -196,9 +199,12 @@
    "cruce": "Cruce 16",
    "local": "Colombia",
    "visita": "Ghana",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 1,
+   "realGV": 0,
+   "realPasa": "Colombia",
+   "realFinalGL": 1,
+   "realFinalGV": 0,
+   "realWentET": false
   },
   {
    "ronda": "Octavos_dia1",
@@ -258,7 +264,7 @@
    "ronda": "Octavos_dia4",
    "cruce": "Cruce 7",
    "local": "Suiza",
-   "visita": "Equipo",
+   "visita": "Colombia",
    "realGL": null,
    "realGV": null,
    "realPasa": null
@@ -266,7 +272,7 @@
   {
    "ronda": "Octavos_dia4",
    "cruce": "Cruce 8",
-   "local": "Equipo",
+   "local": "Argentina",
    "visita": "Egipto",
    "realGL": null,
    "realGV": null,
@@ -1238,44 +1244,44 @@
     "Colombia"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    3,
+    "Francia"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Marruecos"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Bélgica"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "España"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Brasil"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "México"
    ],
    [
-    null,
-    null,
-    null
+    0,
+    2,
+    "Colombia"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "Argentina"
    ],
    [
     null,
