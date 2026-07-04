@@ -1,10 +1,10 @@
 {
- "updatedAt": "2026-07-04T13:44:06.920997+00:00",
+ "updatedAt": "2026-07-04T15:06:23.790369+00:00",
  "deadlines": {
   "rondade32": "2026-07-01T20:10:00+00:00",
   "rondade32e": "2026-06-28T19:58:00+00:00",
   "octavos": "2026-07-04T16:00:00+00:00",
-  "octavosdia1": "2026-07-04T15:00:00+00:00",
+  "octavosdia1": "2026-07-04T15:30:00+00:00",
   "octavosdia2": "2026-07-05T18:00:00+00:00",
   "octavosdia3": "2026-07-06T17:00:00+00:00",
   "octavosdia4": "2026-07-07T14:00:00+00:00",
@@ -434,44 +434,44 @@
     "Colombia"
    ],
    [
-    null,
-    null,
+    0,
+    2,
+    "Francia"
+   ],
+   [
+    1,
+    2,
+    "Marruecos"
+   ],
+   [
+    2,
+    2,
     null
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "España"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Brasil"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Inglaterra"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Colombia"
    ],
    [
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null
+    3,
+    0,
+    "Argentina"
    ],
    [
     null,
@@ -596,44 +596,44 @@
     "Colombia"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    4,
+    "Francia"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    3,
+    "Marruecos"
    ],
    [
-    null,
-    null,
-    null
+    3,
+    1,
+    "Estados Unidos"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "España"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    2,
+    "Noruega"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    3,
+    "Inglaterra"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Colombia"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "Argentina"
    ],
    [
     null,
@@ -758,44 +758,44 @@
     "Colombia"
    ],
    [
-    null,
-    null,
-    null
+    0,
+    3,
+    "Francia"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Marruecos"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    0,
+    "Estados Unidos"
    ],
    [
-    null,
-    null,
-    null
+    0,
+    2,
+    "España"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "Brasil"
    ],
    [
-    null,
-    null,
-    null
+    0,
+    1,
+    "Inglaterra"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Colombia"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "Argentina"
    ],
    [
     null,
@@ -1406,44 +1406,44 @@
     "Colombia"
    ],
    [
-    null,
-    null,
+    1,
+    3,
+    "Francia"
+   ],
+   [
+    2,
+    2,
     null
    ],
    [
-    null,
-    null,
+    2,
+    1,
+    "Estados Unidos"
+   ],
+   [
+    1,
+    1,
     null
    ],
    [
-    null,
-    null,
+    2,
+    1,
+    "Brasil"
+   ],
+   [
+    2,
+    1,
+    "México"
+   ],
+   [
+    1,
+    1,
     null
    ],
    [
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null
-   ],
-   [
-    null,
-    null,
-    null
+    2,
+    1,
+    "Argentina"
    ],
    [
     null,
@@ -1603,9 +1603,9 @@
     "Colombia"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    0,
+    "Argentina"
    ],
    [
     null,
