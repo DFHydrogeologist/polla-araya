@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-05T18:07:54.535156+00:00",
+ "updatedAt": "2026-07-05T19:52:17.665096+00:00",
  "deadlines": {
   "rondade32": "2026-07-01T20:10:00+00:00",
   "rondade32e": "2026-06-28T19:58:00+00:00",
@@ -287,8 +287,8 @@
   {
    "ronda": "Cuartos",
    "cruce": "Cruce 1",
-   "local": "Equipo",
-   "visita": "Equipo",
+   "local": "Francia",
+   "visita": "Marruecos",
    "realGL": null,
    "realGV": null,
    "realPasa": null
