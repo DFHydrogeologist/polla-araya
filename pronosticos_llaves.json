@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-07T16:34:39.010477+00:00",
+ "updatedAt": "2026-07-07T19:05:19.008896+00:00",
  "deadlines": {
   "rondade32": "2026-07-01T20:10:00+00:00",
   "rondade32e": "2026-06-28T19:58:00+00:00",
@@ -292,9 +292,12 @@
    "cruce": "Cruce 8",
    "local": "Argentina",
    "visita": "Egipto",
-   "realGL": null,
-   "realGV": null,
-   "realPasa": null
+   "realGL": 3,
+   "realGV": 2,
+   "realPasa": "Argentina",
+   "realFinalGL": 3,
+   "realFinalGV": 2,
+   "realWentET": false
   },
   {
    "ronda": "Cuartos",
@@ -308,8 +311,8 @@
   {
    "ronda": "Cuartos",
    "cruce": "Cruce 2",
-   "local": "Equipo",
-   "visita": "Equipo",
+   "local": "España",
+   "visita": "Bélgica",
    "realGL": null,
    "realGV": null,
    "realPasa": null
@@ -326,8 +329,8 @@
   {
    "ronda": "Cuartos",
    "cruce": "Cruce 4",
-   "local": "Equipo",
-   "visita": "Equipo",
+   "local": "Argentina",
+   "visita": "Colombia",
    "realGL": null,
    "realGV": null,
    "realPasa": null
