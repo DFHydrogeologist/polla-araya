@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-13T16:37:41.410384+00:00",
+ "updatedAt": "2026-07-13T18:46:01.940429+00:00",
  "deadlines": {
   "rondade32": "2026-07-01T20:10:00+00:00",
   "rondade32e": "2026-06-28T19:58:00+00:00",
@@ -1340,14 +1340,14 @@
     "Suiza"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    1,
+    "Francia"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    2,
+    "Inglaterra"
    ],
    [
     null,
@@ -1664,14 +1664,14 @@
     "Argentina"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "España"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "Inglaterra"
    ],
    [
     null,
