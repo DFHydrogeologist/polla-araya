@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-15T19:45:44.069390+00:00",
+ "updatedAt": "2026-07-15T21:04:03.798824+00:00",
  "deadlines": {
   "rondade32": "2026-07-01T20:10:00+00:00",
   "rondade32e": "2026-06-28T19:58:00+00:00",
@@ -375,7 +375,7 @@
    "ronda": "3er puesto",
    "cruce": "Único",
    "local": "Francia",
-   "visita": "Equipo",
+   "visita": "Inglaterra",
    "realGL": null,
    "realGV": null,
    "realPasa": null
@@ -384,7 +384,7 @@
    "ronda": "FINAL",
    "cruce": "Único",
    "local": "España",
-   "visita": "Equipo",
+   "visita": "Argentina",
    "realGL": null,
    "realGV": null,
    "realPasa": null
