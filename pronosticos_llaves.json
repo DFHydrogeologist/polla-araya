@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-07-18T00:57:55.146373+00:00",
+ "updatedAt": "2026-07-18T04:07:37.561234+00:00",
  "deadlines": {
   "rondade32": "2026-07-01T20:10:00+00:00",
   "rondade32e": "2026-06-28T19:58:00+00:00",
@@ -1032,14 +1032,14 @@
     "Argentina"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    2,
+    "Inglaterra"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "España"
    ]
   ],
   "Claude": [
@@ -1194,14 +1194,14 @@
     "Argentina"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    1,
+    "Francia"
    ],
    [
-    null,
-    null,
-    null
+    1,
+    1,
+    "Argentina"
    ]
   ],
   "Doris": [
@@ -1680,14 +1680,14 @@
     "Inglaterra"
    ],
    [
-    null,
-    null,
-    null
+    0,
+    1,
+    "Inglaterra"
    ],
    [
-    null,
-    null,
-    null
+    2,
+    1,
+    "España"
    ]
   ]
  }
